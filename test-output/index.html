@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>D:\selenium training\Assingment\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods, 6 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="editDuplicateClient">editDuplicateClient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="testAddDuplicateClient({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...)">testAddDuplicateClient({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="testEditClientWithLongFields">testEditClientWithLongFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="testEditClientWithSpecialCharacters">testEditClientWithSpecialCharacters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="testLongFields({TRN=654321, Company=some un natural long data which, Email=lorem@example.com, Address=  , First Nam...)">testLongFields({TRN=654321, Company=some un natural long data which, Email=lorem@example.com, Address=  , First Nam...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="validInfo({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...)">validInfo({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="editClient">editClient</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="mandatoryInfo({TRN=754133, Company=Companyo b12, Email=mohnmapl2@gmail.com, Address= , First Name=Joohny, Country=...)">mandatoryInfo({TRN=754133, Company=Companyo b12, Email=mohnmapl2@gmail.com, Address= , First Name=Joohny, Country=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="testAddClientWithEmptyFields">testAddClientWithEmptyFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testInvalidLogin(invalidUsername1ghvkjbicjvhkjfuyv,..kjfyujhvivuvhv, Testing@123)">testInvalidLogin(invalidUsername1ghvkjbicjvhkjfuyv,..kjfyujhvivuvhv, Testing@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testInvalidLogin(Automationuser, invalidPassword2)">testInvalidLogin(Automationuser, invalidPassword2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testInvalidLogin(invalidUsername1, Testing@123)">testInvalidLogin(invalidUsername1, Testing@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testInvalidLogin(Automationuser, Testing @123)">testInvalidLogin(Automationuser, Testing @123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testInvalidLogin(Automationuser,  Testing@123)">testInvalidLogin(Automationuser,  Testing@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testInvalidLogin(  ,   )">testInvalidLogin(  ,   )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.ClientTest" class="method navigator-link" hash-for-method="testSpecialCharacters({TRN=6521456, Company=@#$%&amp;@$, Email=cmail2@gmail.com, Address= , First Name=FirstName12@#, Country=...)">testSpecialCharacters({TRN=6521456, Company=@#$%&@$, Email=cmail2@gmail.com, Address= , First Name=FirstName12@#, Country=...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(AutomationUser, Testing@123)">testValidLogin(AutomationUser, Testing@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(AUTOMATIONUSER, Testing@123)">testValidLogin(AUTOMATIONUSER, Testing@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testValidLogin( Automationuser  , Testing@123)">testValidLogin( Automationuser  , Testing@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(automationuser, Testing@123)">testValidLogin(automationuser, Testing@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Al_Fardan.Assingment.LoginTest" class="method navigator-link" hash-for-method="testValidLogin(Automationuser, Testing@123)">testValidLogin(Automationuser, Testing@123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Al_Fardan.Assingment.ClientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editDuplicateClient">
+                  </a> <!-- editDuplicateClient -->
+                  <span class="method-name">editDuplicateClient</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.text-danger&quot;}
+  (Session info: chrome=118.0.5993.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ad72a85da4086f3d1895ff681a62cec, findElement {using=css selector, value=span.text-danger}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\ANMOLK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1972/devtool..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ad72a85da4086f3d1895ff681a62cec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+	at Al_Fardan.Assingment.ClientPage.errorMessage(ClientPage.java:118)
+	at Al_Fardan.Assingment.ClientTest.editDuplicateClient(ClientTest.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddDuplicateClient({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...)">
+                  </a> <!-- testAddDuplicateClient({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...) -->
+                  <span class="method-name">testAddDuplicateClient</span>
+                  <span class="parameters">({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First Name=fpo Name, Country= , City=UAE12, ZIP Code=125246, Last Name=lipa Name, Mobile=5762537895})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.text-danger&quot;}
+  (Session info: chrome=118.0.5993.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ad72a85da4086f3d1895ff681a62cec, findElement {using=css selector, value=span.text-danger}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\ANMOLK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1972/devtool..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ad72a85da4086f3d1895ff681a62cec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+	at Al_Fardan.Assingment.ClientPage.errorMessage(ClientPage.java:118)
+	at Al_Fardan.Assingment.ClientTest.testAddDuplicateClient(ClientTest.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditClientWithLongFields">
+                  </a> <!-- testEditClientWithLongFields -->
+                  <span class="method-name">testEditClientWithLongFields</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.text-danger&quot;}
+  (Session info: chrome=118.0.5993.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ad72a85da4086f3d1895ff681a62cec, findElement {using=css selector, value=span.text-danger}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\ANMOLK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1972/devtool..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ad72a85da4086f3d1895ff681a62cec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at Al_Fardan.Assingment.ClientTest.testEditClientWithLongFields(ClientTest.java:158)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testEditClientWithSpecialCharacters">
+                  </a> <!-- testEditClientWithSpecialCharacters -->
+                  <span class="method-name">testEditClientWithSpecialCharacters</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.text-danger&quot;}
+  (Session info: chrome=118.0.5993.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ad72a85da4086f3d1895ff681a62cec, findElement {using=css selector, value=span.text-danger}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\ANMOLK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1972/devtool..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ad72a85da4086f3d1895ff681a62cec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at Al_Fardan.Assingment.ClientTest.testEditClientWithSpecialCharacters(ClientTest.java:146)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLongFields({TRN=654321, Company=some un natural long data which, Email=lorem@example.com, Address=  , First Nam...)">
+                  </a> <!-- testLongFields({TRN=654321, Company=some un natural long data which, Email=lorem@example.com, Address=  , First Nam...) -->
+                  <span class="method-name">testLongFields</span>
+                  <span class="parameters">({TRN=654321, Company=some un natural long data which, Email=lorem@example.com, Address=  , First Name=consectetur adipiscing elit..., Country=  , City=  , ZIP Code=12345453115325, Last Name=should be elimineted by the computer, Mobile=1234567890})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#company_name&quot;}
+  (Session info: chrome=118.0.5993.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.14.1&apos;, revision: &apos;03f8ede370&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2ad72a85da4086f3d1895ff681a62cec, findElement {using=id, value=company_name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.89, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: C:\Users\ANMOLK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:1972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:1972/devtool..., se:cdpVersion: 118.0.5993.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2ad72a85da4086f3d1895ff681a62cec
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
+	at Al_Fardan.Assingment.ClientPage.addClient(ClientPage.java:87)
+	at Al_Fardan.Assingment.ClientTest.testLongFields(ClientTest.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validInfo({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...)">
+                  </a> <!-- validInfo({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...) -->
+                  <span class="method-name">validInfo</span>
+                  <span class="parameters">({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First Name=fpo Name, Country= , City=UAE12, ZIP Code=125246, Last Name=lipa Name, Mobile=5762537895})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Company name not found in the list: ropandom Company expected [true] but found [false]
+	at Al_Fardan.Assingment.ClientTest.validInfo(ClientTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test adding a client with all information)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Al_Fardan.Assingment.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(invalidUsername1ghvkjbicjvhkjfuyv,..kjfyujhvivuvhv, Testing@123)">
+                  </a> <!-- testInvalidLogin(invalidUsername1ghvkjbicjvhkjfuyv,..kjfyujhvivuvhv, Testing@123) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(invalidUsername1ghvkjbicjvhkjfuyv,..kjfyujhvivuvhv, Testing@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(Automationuser, invalidPassword2)">
+                  </a> <!-- testInvalidLogin(Automationuser, invalidPassword2) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(Automationuser, invalidPassword2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(invalidUsername1, Testing@123)">
+                  </a> <!-- testInvalidLogin(invalidUsername1, Testing@123) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(invalidUsername1, Testing@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(Automationuser, Testing @123)">
+                  </a> <!-- testInvalidLogin(Automationuser, Testing @123) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(Automationuser, Testing @123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(Automationuser,  Testing@123)">
+                  </a> <!-- testInvalidLogin(Automationuser,  Testing@123) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(Automationuser,  Testing@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidLogin(  ,   )">
+                  </a> <!-- testInvalidLogin(  ,   ) -->
+                  <span class="method-name">testInvalidLogin</span>
+                  <span class="parameters">(  ,   )</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(AutomationUser, Testing@123)">
+                  </a> <!-- testValidLogin(AutomationUser, Testing@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(AutomationUser, Testing@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(AUTOMATIONUSER, Testing@123)">
+                  </a> <!-- testValidLogin(AUTOMATIONUSER, Testing@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(AUTOMATIONUSER, Testing@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin( Automationuser  , Testing@123)">
+                  </a> <!-- testValidLogin( Automationuser  , Testing@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">( Automationuser  , Testing@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(automationuser, Testing@123)">
+                  </a> <!-- testValidLogin(automationuser, Testing@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(automationuser, Testing@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidLogin(Automationuser, Testing@123)">
+                  </a> <!-- testValidLogin(Automationuser, Testing@123) -->
+                  <span class="method-name">testValidLogin</span>
+                  <span class="parameters">(Automationuser, Testing@123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Al_Fardan.Assingment.ClientTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editClient">
+                  </a> <!-- editClient -->
+                  <span class="method-name">editClient</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mandatoryInfo({TRN=754133, Company=Companyo b12, Email=mohnmapl2@gmail.com, Address= , First Name=Joohny, Country=...)">
+                  </a> <!-- mandatoryInfo({TRN=754133, Company=Companyo b12, Email=mohnmapl2@gmail.com, Address= , First Name=Joohny, Country=...) -->
+                  <span class="method-name">mandatoryInfo</span>
+                  <span class="parameters">({TRN=754133, Company=Companyo b12, Email=mohnmapl2@gmail.com, Address= , First Name=Joohny, Country=  , City=  , ZIP Code= , Last Name= , Mobile=4676563270})</span>
+                  <em>
+(Test adding a client with mandatory information)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddClientWithEmptyFields">
+                  </a> <!-- testAddClientWithEmptyFields -->
+                  <span class="method-name">testAddClientWithEmptyFields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSpecialCharacters({TRN=6521456, Company=@#$%&amp;@$, Email=cmail2@gmail.com, Address= , First Name=FirstName12@#, Country=...)">
+                  </a> <!-- testSpecialCharacters({TRN=6521456, Company=@#$%&@$, Email=cmail2@gmail.com, Address= , First Name=FirstName12@#, Country=...) -->
+                  <span class="method-name">testSpecialCharacters</span>
+                  <span class="parameters">({TRN=6521456, Company=@#$%&@$, Email=cmail2@gmail.com, Address= , First Name=FirstName12@#, Country=  , City=  , ZIP Code= , Last Name=hfdgv ukbfk, Mobile=9874543270})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\selenium training\Assingment\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Al_Fardan.Assingment.ClientTest&quot;/&gt;
+      &lt;class name=&quot;Al_Fardan.Assingment.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testEditClientWithSpecialCharacters')
+data.setCell(0, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(0, 3, 13665);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validInfo')
+data.setCell(1, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(1, 3, 13006);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testEditClientWithLongFields')
+data.setCell(2, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(2, 3, 12899);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testAddDuplicateClient')
+data.setCell(3, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(3, 3, 12854);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'editDuplicateClient')
+data.setCell(4, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(4, 3, 12763);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testLongFields')
+data.setCell(5, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(5, 3, 11157);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testValidLogin')
+data.setCell(6, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(6, 3, 9359);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testValidLogin')
+data.setCell(7, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(7, 3, 8363);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testValidLogin')
+data.setCell(8, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(8, 3, 8330);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testValidLogin')
+data.setCell(9, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(9, 3, 8296);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testValidLogin')
+data.setCell(10, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(10, 3, 8295);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'mandatoryInfo')
+data.setCell(11, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(11, 3, 8274);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'editClient')
+data.setCell(12, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(12, 3, 5983);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testSpecialCharacters')
+data.setCell(13, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(13, 3, 2434);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testInvalidLogin')
+data.setCell(14, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(14, 3, 1368);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testInvalidLogin')
+data.setCell(15, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(15, 3, 1354);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testInvalidLogin')
+data.setCell(16, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(16, 3, 1346);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testInvalidLogin')
+data.setCell(17, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(17, 3, 1296);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testAddClientWithEmptyFields')
+data.setCell(18, 2, 'Al_Fardan.Assingment.ClientTest')
+data.setCell(18, 3, 1273);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testInvalidLogin')
+data.setCell(19, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(19, 3, 1198);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testInvalidLogin')
+data.setCell(20, 2, 'Al_Fardan.Assingment.LoginTest')
+data.setCell(20, 3, 1144);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Al_Fardan.Assingment.ClientTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">editClient</span>
+                <span class="method-start">7967 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">editDuplicateClient</span>
+                <span class="method-start">13953 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mandatoryInfo({TRN=754133, Company=Companyo b12, Email=mohnmapl2@gmail.com, Address= , First Name=Joohny, Country=...)</span>
+                <span class="method-start">26724 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testAddClientWithEmptyFields</span>
+                <span class="method-start">35000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddDuplicateClient({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...)</span>
+                <span class="method-start">36275 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEditClientWithLongFields</span>
+                <span class="method-start">49131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testEditClientWithSpecialCharacters</span>
+                <span class="method-start">62031 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLongFields({TRN=654321, Company=some un natural long data which, Email=lorem@example.com, Address=  , First Nam...)</span>
+                <span class="method-start">75698 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testSpecialCharacters({TRN=6521456, Company=@#$%&@$, Email=cmail2@gmail.com, Address= , First Name=FirstName12@#, Country=...)</span>
+                <span class="method-start">86857 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validInfo({TRN=166956, Company=ropandom Company, Email=onlmmail1@gmail.com, Address=1235 Maine St Dubai, First...)</span>
+                <span class="method-start">89292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">102300 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Al_Fardan.Assingment.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">102434 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(  ,   )</span>
+                <span class="method-start">113251 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(Automationuser, Testing @123)</span>
+                <span class="method-start">114451 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(Automationuser,  Testing@123)</span>
+                <span class="method-start">115819 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(invalidUsername1, Testing@123)</span>
+                <span class="method-start">117115 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(Automationuser, invalidPassword2)</span>
+                <span class="method-start">118462 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testInvalidLogin(invalidUsername1ghvkjbicjvhkjfuyv,..kjfyujhvivuvhv, Testing@123)</span>
+                <span class="method-start">119816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(Automationuser, Testing@123)</span>
+                <span class="method-start">120961 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin( Automationuser  , Testing@123)</span>
+                <span class="method-start">129325 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(AutomationUser, Testing@123)</span>
+                <span class="method-start">137656 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(automationuser, Testing@123)</span>
+                <span class="method-start">147016 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testValidLogin(AUTOMATIONUSER, Testing@123)</span>
+                <span class="method-start">155313 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">163609 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
